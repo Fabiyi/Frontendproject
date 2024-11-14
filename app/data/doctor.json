@@ -1,0 +1,57 @@
+
+[
+    {
+        "id":"john-daniel",
+        "link":"dr-john-daniel",
+        "name":"Dr John Daniel",
+        "image":"/Doctor11.jpg",
+        "department":"Cardiology",
+        "sepcialization":"Heart specialist",
+        "bio":"Dr John Daniel has over 20 years of experience in cardiology and is a renowned expert in heart health."
+    },
+    {
+        "id":"john-Doe",
+        "link":"dr-john-doe",
+        "name":"Dr John Doe",
+        "image":"/Doctor12.jpg",
+        "department":"Surgical",
+        "sepcialization":"Heart specialist",
+        "bio":"Dr John Doe is a leading neurologist specialing in brain disorders and cognitive health."
+    },
+    {
+        "id":"jane-smith",
+        "link":"dr-jane-smith",
+        "name":"Dr Jane Smith",
+        "image":"/Doctor13.jpg",
+        "department":"Neurology",
+        "sepcialization":"Brain specialist",
+        "bio":"Dr Jane Smith is a leading neurologist specializing in brain health and cognitive wellness."
+    },
+    {
+        "id":"emily-clart",
+        "link":"dr-emily-clart",
+        "name":"Dr Emily Clart",
+        "image":"/Doctor14.jpg",
+        "department":"Orthopedics",
+        "sepcialization":"Bone specialist",
+        "bio":"With a focus on bone health, Dr. Emily Clart is a top orthopedic surgeon with years of experience."
+    },
+    {
+        "id":"micheal-brown",
+        "link":"dr-micheal-brown",
+        "name":"Dr Michel Brown",
+        "image":"/Doctor15.jpg",
+        "department":"Pediatrics",
+        "sepcialization":"Child specialist",
+        "bio":"Dr Micheal Brown is a leading neurologist specialing in brain disorders and cognitive health."
+    },
+    {
+        "id":"joseph-ik",
+        "link":"dr-joseph-ik",
+        "name":"Dr Joseph Ik",
+        "image":"/Doctor16.jpg",
+        "department":"Emergency Services",
+        "sepcialization":"Heart specialist",
+        "bio":"Dr Joseph Ik is a leading neurologist specialing in brain disorders and cognitive health."
+    }
+]
