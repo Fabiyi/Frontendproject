@@ -73,6 +73,7 @@ export default function Navbar(){
                 </button>
             </div>
             {/* mobile menu  */}
+
             {display && (
                 <div className="md:hidden">
                     <Link href='/' className="block text-white hover:bg-gray-700 p-2">Home
