@@ -4,33 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import {motion} from 'framer-motion';
 
-import Mydoo from "/public/Images/Doctor8.jpg";
-import Mydoe from "/public/Images/Doctor18.jpg";
-import Mydod from "/public/Images/Doctor15.jpg";
-import Mydof from "/public/Images/Doctor21.jpg";
+
+
 
 
 export default function About() {
   
   return (
     <main className="bg-slate-300 min-h-screen pt-10"> 
-
-    <section className="mt-10">
-      <Image
-            className=""
-            alt="Mydoo"
-            src={Mydoo}
-            placeholder="blur"
-            quality={100}
-            fill
-            sizes="100vw"
-            style={{
-              objectFit:'cover'
-            }}/>
-            
-    </section>
-   
-    <motion.section className="max-w-4xl mx-auto py-6"
+<motion.section className="max-w-4xl mx-auto py-6 "
                     initial={{opacity:0, y:50}}
                     animate={{opacity:1, y:0}}
                     transition={{duration:1}}
@@ -54,7 +36,7 @@ export default function About() {
           </motion.div>
     </motion.section>
     
-    
+   
 
     <motion.section className="max-w-4xl mx-auto py-6"
                     initial={{opacity:0, y:50}}
@@ -89,8 +71,7 @@ export default function About() {
       </motion.p>
 
       </motion.section>
-
-    <motion.section className="max-w-4xl mx-auto py-8"
+    <motion.section className=" bg-section1 bg-cover bg-center max-w-4xl mx-auto py-8"
                     initial={{opacity:0, y:50}}
                     animate={{opacity:1, y:0}}
                     transition={{duration:1}}
@@ -123,32 +104,34 @@ export default function About() {
                 animate={{opacity:1, y:0}}
                 transition={{delay:1, duration:0.8}}>Meet Our Doctors</h2> </Link>
 
-            <div className="flex flex-col md:flex-row justify-around max-w-6xl mx-auto gap-x-6"
+            <div className="flex flex-col md:flex-row justify-around items-center max-w-6xl mx-auto gap-x-6"
                  initial={{scale:0.9, opacity:0}}
                  animate={{scale:1, opacity:1}}
                  transition={{delay:1.4, duration:1}}>
-            <div className="relative w-full md:w-1/3 mb-4 md:mb-0">
-             <Image src={Mydoe}  className=" w-full h-auto" />  
+            <div className="relative w-40 h-40 overflow-hidden rounded-full md:w-1/3 mb-4 md:mb-0">
+            <Image alt="Mydoo" src={'/images/Doctor6.jpg'} quality={100}width={300} height={300} sizes="100vw" style={{objectFit:'cover'}}/>  
                 
              <Link href="/doctors/dr-emily-clart"><p className="absolute bottom-2 left-0 right-0 text-white bg-black bg-opacity-50  hover:bg-blue-950 p-2 text-center">
                     Dr. Emily Clart
                 </p> </Link>
             </div>
-            <div className="relative w-full md:w-1/3 mb-4 md:mb-0"
+            <div className="relative w-40 h-40 overflow-hidden  rounded-full md:w-1/3 mb-4 md:mb-0"
                  initial={{scale:0.9, opacity:0}}
                  animate={{scale:1, opacity:1}}
                  transition={{delay:1.4, duration:1}}>
-              <Image src={Mydod}  className=" w-full h-auto" /> 
+              <Image
+            className=""alt="Mydoo" src={'/images/Doctor11.jpg'} quality={100} width={400} height={400} sizes="100vw"style={{objectFit:'cover'
+            }}/> 
               <Link href="/doctors/dr-john-daniel"> <p className="absolute bottom-2 left-0 right-0 text-white bg-black bg-opacity-50  hover:bg-blue-950 p-2 text-center">
                     Dr. John Daniel
                 </p>   </Link>
             </div>
-            <div className="relative w-full md:w-1/3 mb-4 md:mb-0"
+            <div className="relative w-40 h-40 overflow-hidden rounded-full md:w-1/3 mb-4 md:mb-0"
                  initial={{scale:0.9, opacity:0}}
                  animate={{scale:1, opacity:1}}
                  transition={{delay:1.4, duration:1}}>
-              <Image src={Mydof}  className=" w-full h-auto" />  
-              <Link href="/doctors/dr-jane-smith"> <p className="absolute bottom-2 left-0 right-0 text-white bg-black bg-opacity-50 hover:bg-blue-950 p-2 text-center">
+              <Image alt="Mydoo" src={'/images/Doctor21.jpg'} quality={100}width={400} height={400} sizes="100vw"style={{objectFit:'cover' }}/>  
+              <Link href="/doctors/dr-jane-smith"> <p className="absolute bottom-2 left-0 right-0 text-white bg-black bg-opacity-50  hover:bg-blue-950 p-2 text-center">
                 Dr. Jane Smith
                 </p>  </Link>
             </div>

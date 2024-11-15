@@ -1,14 +1,9 @@
-"use client"
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Buttons from "./_components/Buttons/Button";
 import Container from "./_components/Container";
-import {motion } from "framer-motion";
-import Mydoo from "/public/Images/Doctor10.jpg";
-import Mydoc from "/public/Images/Doctor1.jpg";
-import Mydog from "/public/Images/Doctor9.jpg";
-import Mydoh from "/public/Images/Doctor5.jpg";
+
 
 
 
@@ -32,8 +27,8 @@ export default function Home() {
       <Image
             className=""
             alt="Mydoo"
-            src={Mydoo}
-            placeholder="blur"
+            src={'/images/Doctor10.jpg'}
+            // placeholder="blur"
             quality={100}
             fill
             sizes="100vw"
@@ -56,7 +51,7 @@ export default function Home() {
       <Container>
         <section className=" flex flex-col md:flex-row items-center md:items-start gap-6 p-6 bg-gray-100 rounded-full shadow-lg max-w-4xl mx-auto ">
               <div className=" flex flex-row py-4 gap-8 ">
-                   <Link href="./doctors"> <Image src={Mydoc} /> </Link>     
+                   <Link href="./doctors"> <Image src={'/images/Doctor1.jpg'} width={450} height={450} /> </Link>     
               </div>
 
               <div className="flex flex-col space-y-4 w-full md:w-1/2">
@@ -117,12 +112,12 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-6 mt-2">
               {/*repeat this block for each tip */}
                <div className="text-center">
-               <Image src={Mydoh}  className="rounded-md" width={450} height={450} />
+               <Image src={'/images/Doctor5.jpg'}  className="rounded-md" width={450} height={450} />
               <h3 className="mt-4 text-lg font-semibold text-gray-800">Stay Hydrated</h3>
               <p className="text-gray-600">Drinking enough water each day is essential for maintaining good health.</p>
                </div>
                <div className="text-center">
-              <Image src={Mydog}  className="rounded-md" width={450} height={450} />
+              <Image src={'/images/Doctor9.jpg'}  className="rounded-md" width={450} height={450} />
               <h3 className="mt-4 text-lg font-semibold text-gray-800">Exercise Regularly</h3>
               <p className="text-gray-600">Engaging in at least 30 minutes of moderate activities on most days of the week.</p>
                </div>

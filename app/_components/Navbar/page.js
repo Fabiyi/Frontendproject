@@ -4,7 +4,6 @@ import Container from "../Container";
 import { useEffect, useState } from "react";
 import Buttons from "../Buttons/Button";
 import Image from "next/image";
-import Mydok from "../logo.png";
 import {motion} from "framer-motion";
 
 
@@ -38,7 +37,7 @@ export default function Navbar(){
                  animate={{opacity:1, x:0}}
                  transition={{duration: 0.8, delay: 0.3}}>
                 <div className=" space-x-0 flex flex-row">
-                <Image src={Mydok} alt="logo" width={30} height={30} className="bg-white rounded"/>
+                <Image src={'/images/logo.png'} alt="logo" width={30} height={30} className="bg-white rounded"/>
                 <Link href='/' className="text-2xl font-bold text-white hover:text-4xl"> DAMTOL</Link>
                 </div>
                 <div className="hidden md:flex space-x-6 ">
