@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Container from "../Container";
 import { useEffect, useState } from "react";
-import Buttons from "../Buttons/Button";
+
 import Image from "next/image";
 
 
@@ -26,16 +26,12 @@ export default function Navbar(){
         }`}>
         <Container>
         
-                <motion.nav className="bg-slate-800 p-4 top-0 left-0 w-full bg-transparent "
-        initial={{opacity:0, y:-50}}
-                animate={{opacity: 1, y:0}}
-                transition={{duration: 0.8}}
+                <nav className="bg-slate-800 p-4 top-0 left-0 w-full bg-transparent "
+        
                 >
 
             <div className="container mx-auto flex justify-between items-center"
-                 initial={{opacity:0, x: 50}}
-                 animate={{opacity:1, x:0}}
-                 transition={{duration: 0.8, delay: 0.3}}>
+                 >
                 <div className=" space-x-0 flex flex-row">
                 <Image src={'/images/logo.png'} alt="logo" width={30} height={30} className="bg-white rounded"/>
                 <Link href='/' className="text-2xl font-bold text-white hover:text-4xl"> DAMTOL</Link>
@@ -88,7 +84,7 @@ export default function Navbar(){
                     </div>
                 </div>
             )}
-        </motion.nav>
+        </nav>
         </Container>
         </header>
     );
