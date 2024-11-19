@@ -4,7 +4,7 @@ import Container from "../Container";
 import { useEffect, useState } from "react";
 import Buttons from "../Buttons/Button";
 import Image from "next/image";
-import {motion} from "framer-motion";
+
 
 
 
