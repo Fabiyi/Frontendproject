@@ -50,16 +50,16 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold text-lg mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="/fabiyi daniel damilola" aria-label="Facebook" className="hover:text-blue-500">
+            <a href="Damtol Hospital" aria-label="Facebook" className="hover:text-blue-500">
               <FaFacebook size={24} />
             </a>
-            <a href="#" aria-label="Twitter" className="hover:text-blue-500">
+            <a href="Damtol Hospital" aria-label="Twitter" className="hover:text-blue-500">
               <FaTwitter size={24} />
             </a>
-            <a href="#" aria-label="Instagram" className="hover:text-blue-500">
+            <a href="Damtol Hospital" aria-label="Instagram" className="hover:text-blue-500">
               <FaInstagram size={24} />
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-blue-500">
+            <a href="Damtol Hospital" aria-label="LinkedIn" className="hover:text-blue-500">
               <FaLinkedin size={24} />
             </a>
           </div>
