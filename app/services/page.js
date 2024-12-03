@@ -86,8 +86,8 @@ export default function ServicesPage(){
                         </div>
                     
                         <div>
-                        <Link href={`/services/${service.id}`} > <h2 className="text-xl font-semibold text-gray-800 hover:text-2xl hover:text-blue-400">{service.name}</h2>  </Link>
-                            <p className="text-gray-600 mt-2">{service.description}</p>
+                         <h2 className="text-xl font-semibold text-gray-800">{service.name}</h2>  
+                         <Link href={`/services/${service.id}`} > <p className="text-gray-600 mt-2 hover:text-xl hover:text-blue-400">{service.description}</p> </Link>
                         </div>
                     </div>
                     

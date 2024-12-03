@@ -15,13 +15,13 @@ export default function Home() {
           <div className="absolute section1 bg-inset-0 bg-cover bg-center filter blur-sm" > </div>
           
           <div className="relative p-8 text-center z-10 text-white">
-          <h1 className="lg:text-8xl ms:text-7xl font-bold text-white">Welcome to DAMTOL</h1>
-          <p className="lg:text-4xl ms:text-3xl font-semibold text-white">Your health, Our Priority</p>
+          <h1 className="lg:text-8xl md:text-7xl font-bold text-white">Welcome to DAMTOL</h1>
+          <p className="lg:text-4xl md:text-3xl font-semibold text-white">Your health, Our Priority</p>
           </div>
           
       </section>
 
-
+      <Container>
       <section className="mt-10">
       <Image
             className=""
@@ -36,17 +36,22 @@ export default function Home() {
             }}/>
             
     </section>
+    </Container>
       
       <Container>
       <button text=""  className=" w-20"/>
       </Container>
-      <div className="text-center py-10 bg-gray-100">
+      <Container>
+      <section className="mt-10">
+      <div className=" flex flex-row sm:flex-col sm:items-center justify-center sm:mt-6 py-20 bg-gray-100">
       <h2 className="text-2xl font-semibold text-gray-800 ">Contact Us</h2>
       
       
       <p className="mt-2 text-gray-600 ">For appointments, please visit our <Link href="/contact" className="text-blue-600 underline ">contact page</Link> or call +234-806-127-3323</p>
       
       </div>
+      </section>
+      </Container>
       <Container>
         <section className=" flex flex-col md:flex-row items-center md:items-start gap-6 p-6 bg-gray-100 rounded-full shadow-lg max-w-4xl mx-auto ">
               <div className=" flex flex-row py-4 gap-8 ">

@@ -14,16 +14,16 @@ export default function DoctorPage() {
               {doctors.map((doctor) => (
                 <div key={doctor.id} className="bg-white shadow-lg rounded-lg overflow-hidden ">
                    <div className="items-center">
-                      <Image
+                   <Link href={`/doctors/${doctor.id}`}> <Image
                       src={`/images/${doctor.image}`}
                       alt={doctor.name}
                       width={350}
-                      height={350}/>
+                      height={350}/> </Link> 
                   </div>
                   {/* // {Doctor Details } */}
                    {/* <div className="rounded-full">  {doctor.image} </div> */}
                  <div className="p-4">
-                 <Link href={`/doctors/${doctor.id}`}> <h2 className="text-xl font-semibold hover:text-3xl hover:text-blue-400">{doctor.name}</h2> </Link> 
+                 <h2 className="text-xl font-semibold hover:text-3xl hover:text-blue-400">{doctor.name}</h2> 
                     <p className="text-sm text-gray-500 mt-2 font-bold">{doctor.department}</p>
                     <p className="text-sm text-gray-500 mt-2">{doctor.specialization}</p>
                     <p className="mt-4 text-gray-700">{doctor.bio}</p>

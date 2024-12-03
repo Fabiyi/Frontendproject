@@ -64,7 +64,7 @@ export default function About() {
 
       <section className="py-8 pb-12">
         <Link href="/doctors">
-          <h2 className="text-3xl font-semibold text-center p-6 text-blue-600">
+          <h2 className="text-2xl font-semibold text-center p-6 text-blue-600">
             Meet Our Doctors
           </h2>{" "}
         </Link>
