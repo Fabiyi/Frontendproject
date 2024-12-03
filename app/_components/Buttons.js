@@ -13,4 +13,3 @@ export default function Buttons({ text, nav, orange }) {
     </button>
   );
 }
-

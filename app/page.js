@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Buttons from "./_components/Buttons/Button";
 import Container from "./_components/Container";
 
 
@@ -69,7 +68,7 @@ export default function Home() {
                       <path d="M14 3H4a1 1 0 0 0-1 1v16h2V5h8v14h2V4a1 1 0 0 0-1-1zm7.7 14.3l-4-4a1 1 0 0 0-1-1zm7.7 14.3l-4-4a1 1 0 0 0-1.4 0l-4 4a1 1 0 1 0 1.4 1.4 1.4l3.3-3.3 3.3 3.3a1 1 0 0 0 1.4-1.4z"/></svg>
                   </div>
                   
-                  <Link href="/services/surgical"><p className="text-gray-700 font-medium hover:text-xl hover:text-blue-400">Surgical</p> </Link>
+                  <Link href="/services/surgical"><p className="text-gray-700 font-medium hover:text-xl hover:text-blue-400">Surgical Services</p> </Link>
                 </div>
 
                 <div className="flex items-center gap-3">

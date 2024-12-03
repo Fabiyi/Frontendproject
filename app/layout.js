@@ -1,7 +1,7 @@
 import {Barlow, Rubik} from "next/font/google";
 import "./globals.css";
-import Navbar from "./_components/Navbar/page";
-import Footer from "./_components/Footer/page";
+import Navbar from "./_components/NavBar";
+import Footer from "./_components/Footer";
 
 
 const barlow = Barlow({

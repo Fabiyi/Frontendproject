@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Buttons from '../_components/Buttons/Button';
+import Buttons from '../_components/Buttons';
 
 const AppointmentsPage = () => {
 const [name, setName] = useState('');

@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import doctorsData from '../data/doctor.json';
 import Link from "next/link";

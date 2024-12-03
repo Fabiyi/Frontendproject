@@ -1,9 +1,8 @@
 "use client"
 import Link from "next/link";
-import Container from "../Container";
-import Buttons from "../Buttons/Button";
+import Container from "../_components/Container";
+import Buttons from "../_components/Buttons";
 import { useEffect, useState } from "react";
-
 import Image from "next/image";
 
 
