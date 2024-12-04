@@ -3,55 +3,46 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "./_components/Container";
 
-
-
-
 export default function Home() {
-  
   return (
-    
-    <div className="container mx-auto p-10 ">
-      <section className="relative h-[500px] flex items-center justify-center">
-          <div className="absolute section1 bg-inset-0 bg-cover bg-center filter blur-sm" > </div>
-          
-          <div className="relative p-8 text-center z-10 text-white">
-          <h1 className="lg:text-8xl md:text-7xl font-bold text-white">Welcome to DAMTOL</h1>
-          <p className="lg:text-4xl md:text-3xl font-semibold text-white">Your health, Our Priority</p>
-          </div>
-          
+    <div className="container mx-auto p-10">
+      {/* Hero Section */}
+      <section className="relative h-[500px] flex items-center justify-center bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent filter blur-sm"></div>
+        <div className="relative text-center z-10 text-white">
+          <h1 className="lg:text-8xl md:text-7xl font-bold">Welcome to DAMTOL</h1>
+          <p className="lg:text-4xl md:text-3xl font-semibold mt-4">Your health, Our Priority</p>
+        </div>
       </section>
 
+      {/* Featured Image Section */}
       <Container>
-      <section className="mt-10">
+  <section className="mt-10">
+    <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
       <Image
-            className=""
-            alt="Mydoo"
-            src={'/images/Doctor10.jpg'}
-            // placeholder="blur"
-            quality={100}
-            fill
-            sizes="100vw"
-            style={{
-              objectFit:'cover'
-            }}/>
-            
-    </section>
-    </Container>
-      
-      <Container>
-      <button text=""  className=" w-20"/>
-      </Container>
-      <Container>
-      <section className="mt-10">
-      <div className=" flex flex-row sm:flex-col sm:items-center justify-center sm:mt-6 py-20 bg-gray-100">
-      <h2 className="text-2xl font-semibold text-gray-800 ">Contact Us</h2>
-      
-      
-      <p className="mt-2 text-gray-600 ">For appointments, please visit our <Link href="/contact" className="text-blue-600 underline ">contact page</Link> or call +234-806-127-3323</p>
-      
-      </div>
-      </section>
-      </Container>
+        alt="Doctor"
+        src="/images/Doctor10.jpg"
+        layout="fill"
+        objectFit="cover"
+        className="rounded-lg"
+      />
+    </div>
+  </section>
+
+  {/* Contact Section */}
+  <section className="mt-10 py-10 bg-gray-100 rounded-lg text-center">
+    <h2 className="text-2xl font-semibold text-gray-800">Contact Us</h2>
+    <p className="mt-4 text-gray-600">
+      For appointments, visit our{" "}
+      <Link href="/contact" className="text-blue-600 underline">
+        contact page
+      </Link>{" "}
+      or call +234-806-127-3323.
+    </p>
+  </section>
+</Container>
+
+      {/* Services Section */}
       <Container>
         <section className=" flex flex-col md:flex-row items-center md:items-start gap-6 p-6 bg-gray-100 rounded-full shadow-lg max-w-4xl mx-auto ">
               <div className=" flex flex-row py-4 gap-8 ">
@@ -110,27 +101,32 @@ export default function Home() {
               </div>
         </section>
       </Container>
-      
-      <section className=" py-2 bg-gray-50 pb-10 ">
-            <h2 className="text-2xl font-semibold text-center text-gray-800 py-4"> Health Tips</h2>
-            <div className="flex flex-wrap justify-center gap-6 mt-2">
-              {/*repeat this block for each tip */}
-               <div className="text-center">
-               <Image src={'/images/Doctor5.jpg'}  className="rounded-md" width={450} height={450} />
-              <h3 className="mt-4 text-lg font-semibold text-gray-800">Stay Hydrated</h3>
-              <p className="text-gray-600">Drinking enough water each day is essential for maintaining good health.</p>
-               </div>
-               <div className="text-center">
-              <Image src={'/images/Doctor9.jpg'}  className="rounded-md" width={450} height={450} />
-              <h3 className="mt-4 text-lg font-semibold text-gray-800">Exercise Regularly</h3>
-              <p className="text-gray-600">Engaging in at least 30 minutes of moderate activities on most days of the week.</p>
-               </div>
-              </div>
-         </section>
 
+
+      {/* Health Tips Section */}
+      <section className="py-10 bg-gray-50">
+        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-8">Health Tips</h2>
+        <div className="flex flex-wrap justify-center gap-6">
+          {[
+            {
+              title: "Stay Hydrated",
+              description: "Drinking enough water each day is essential for maintaining good health.",
+              image: "/images/Doctor5.jpg",
+            },
+            {
+              title: "Exercise Regularly",
+              description: "Engaging in at least 30 minutes of moderate activities on most days of the week.",
+              image: "/images/Doctor9.jpg",
+            },
+          ].map((tip, index) => (
+            <div key={index} className="text-center">
+              <Image src={tip.image} className="rounded-md" width={450} height={450} alt={tip.title} />
+              <h3 className="mt-4 text-lg font-semibold text-gray-800">{tip.title}</h3>
+              <p className="text-gray-600 mt-2">{tip.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
-    
   );
 }
-
-

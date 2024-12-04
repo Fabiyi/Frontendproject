@@ -86,7 +86,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom section */}
-      <div className="mt-8 border-t border-gray-700 pt-6 text-center">
+      <div className="mt-8 border-t border-purple-700 pt-6 text-center">
         <p className="text-sm">&copy; {new Date().getFullYear()} Damtol Hospital. All rights reserved.</p>
       </div>
     </footer>
