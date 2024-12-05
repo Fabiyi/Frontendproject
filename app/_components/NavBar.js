@@ -21,7 +21,7 @@ export default function Navbar(){
     }, []);
 
     return(
-        <header className={`fixed top-0 left-0 w-full z-50 transition-colors transition-text duration-300 ${ isScrolled ? 'bg-black shadow-lg text-white' : 'bg-blue-300 text-black'
+        <header className={`fixed top-0 left-0 w-full z-50 transition-colors transition-text duration-300 ${ isScrolled ? 'bg-black shadow-lg text-white' : 'bg-black text-black'
             
         }`}>
         <Container>
